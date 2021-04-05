@@ -3,7 +3,7 @@ const initialState = {
     loading: true
 }
 
-const scheduleReducer = (state, action) => {
+const scheduleReducer = (state=initialState, action) => {
     switch(action.type) {
         default:
             return state
