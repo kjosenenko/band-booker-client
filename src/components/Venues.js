@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Band extends Component {
+class Venues extends Component {
     render() {
         return (
             <div>
-                Band
+                Venues
             </div>
         )
     }
 }
 
-export default Band
+export default Venues

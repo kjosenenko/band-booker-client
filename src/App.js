@@ -10,6 +10,9 @@ import Nav from './components/Nav'
 import Home from './components/Home'
 import Lineup from './components/Lineup'
 import Schedule from './components/Schedule'
+import Bands from './components/Bands'
+import Venues from './components/Venues'
+import Genres from './components/Genres'
 import ErrorPage from './components/ErrorPage'
 
 class App extends Component {
@@ -37,7 +40,10 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/lineup" component={Lineup}/>
-            <Route exact path="/schedule" component={Schedule}/>
+            <Route exact path="/itinerary" component={Schedule}/>
+            <Route exact path="/artists" component={Bands}/>
+            <Route exact path="/venues" component={Venues}/>
+            <Route exact path="/genres" component={Genres}/>
             <Route component={ErrorPage}/>
           </Switch>
         </div>

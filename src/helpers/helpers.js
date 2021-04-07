@@ -1,15 +1,23 @@
-export function returnBandName(id) {
-    console.log('returnBandName')
-}
+// import {connect} from 'react-redux'
 
-export function returnVenueName(id) {
-    console.log('returnVenueName')
-}
+// export function returnBandName(id) {
+//     console.log('returnBandName')
+// }
 
-export function returnGenreName(id) {
-    console.log('returnGenreName')
-}
+// export function returnVenueName(id) {
+//     console.log('returnVenueName')
+// }
 
-// export default returnGenreName
-// export default returnVenueName
-// export default returnBandName
+// export function returnGenreName(id) {
+//     console.log('returnGenreName')
+// }
+
+// mapStateToProps = state => {
+//     return {
+//         bands: state.bands.bands,
+//         venues: state.venues.venues,
+//         genres: state.genres.genres
+//     }
+// }
+
+// export default connect(mapStateToProps)
