@@ -5,7 +5,7 @@ import Band from './Band'
 class Bands extends Component {
     returnGenreName(id) {
         const genre = this.props.genres.filter(g => {
-            return g.id == id;
+            return g.id === id;
         })
         return genre[0].name
     }

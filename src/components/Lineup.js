@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import ShowSet from './ShowSet'
 
 class Lineup extends Component {
     returnBandName(id) {
@@ -22,10 +23,16 @@ class Lineup extends Component {
     }
 
     render() {
-        const lineup = this.props.lineup.map((slot, i) => <p>{this.formattedDate(slot.time)} - {this.returnVenueName(slot.venue_id)} - {this.returnBandName(slot.band_id)}</p>)
+        const schedule = this.props.lineup.map((set, i) => 
+            <ShowSet 
+                key={i}
+                time={this.formattedDate(set.time)}
+                venue={this.returnVenueName(set.venue_id)}
+                band={this.returnBandName(set.band_id)}
+            />)
         return (
             <div>
-                {lineup}
+                {schedule}
             </div>
         )
     }
